@@ -1,5 +1,11 @@
-*{
+html {
   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body{
@@ -20,14 +26,13 @@ h4 {
 header{
   height: 4em;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid green;
 }
 
 .logo{
   display: flex;
-  border: 1px solid red;
 }
 
 .logo img{
@@ -36,11 +41,6 @@ header{
 
 .logo span{
   font-weight: bold;
-}
-
-nav{
-  display: flex;
-  border: 4px solid red;
 }
 
 nav ul {
@@ -56,14 +56,88 @@ nav ul li{
 
 nav ul li a{
   text-decoration: none;
+  color: black;
 }
 
 .hero{
-  background-color: grey;
+  background-color: lightgrey;
   display: flex;
+  height: 600px;
 }
 
-.hero img{
+.students-studying{
   width: 60%;
-  padding: 1em;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2em 1.5em;
+}
+
+.headline{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em;
+  width: 25%;
+}
+
+.headline-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-weight: bold;
+  margin: 1em;
+}
+
+.start-here{
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  width: 100%;
+  background-color: darkslategrey;
+  color: white;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4em;
+    width: 100%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+
+  .mobile{
+    display: none;
+  }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+
+  .mobile{
+    display: none;
+  }
 }
