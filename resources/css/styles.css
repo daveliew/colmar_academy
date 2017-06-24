@@ -12,6 +12,11 @@ body {
 
 a {
   text-decoration: none;
+  color: rgb(6, 149, 210);
+}
+
+p {
+  color: grey;
 }
 
 .bold {
@@ -22,6 +27,9 @@ a {
   margin: 0.5em 0;
 }
 
+.bg-grey{
+  background-color: lightgrey;
+}
 
 /* Header */
 
@@ -62,7 +70,6 @@ nav ul li a{
 /* Banner */
 
 .banner{
-  background-color: lightgrey;
   display: flex;
   height: 600px;
 }
@@ -102,15 +109,25 @@ nav ul li a{
   color: white;
 }
 
-
-/* Information*/
-
-.information{
+.start-here p{
+  color: white;
+}
+/* Containers*/
+.container{
   display: flex;
   padding: 2em 1.5em;
 }
 
-.information-left{
+.container-header{
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  width: 100%;
+}
+
+.container-left{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -119,11 +136,11 @@ nav ul li a{
   margin-right: 1.5em;
 }
 
-.information-row{
+.container-row{
   margin-bottom: 1em;
 }
 
-.information-row img{
+.container-row img{
   display: flex;
   width: 100%;
   background-image: url("../images/information-main.jpg");
@@ -132,6 +149,7 @@ nav ul li a{
   background-size: cover;
 }
 
+/* Events */
 .events-row{
   display: flex;
   flex-basis: 423px;
@@ -156,22 +174,6 @@ nav ul li a{
 }
 
 /* Courses */
-.course{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: lightgrey;
-}
-
-.course-header{
-  display: flex;
-  font-size: 1.5em;
-  justify-content: center;
-  align-items: center;
-  padding: 2em 0;
-  width: 100%;
-}
-
 .course-grid{
   display: flex;
   justify-content: space-around;
@@ -215,6 +217,51 @@ nav ul li a{
   line-height: 1.5;
 }
 
+/* Thesis Exhibit */
+.container-left video{
+  width: 100%
+}
+
+.thesis-row{
+  display: flex;
+  max-height: 168px;
+  max-width: 423px;
+}
+
+.thesis-row:first-child{
+  background-color: lightgrey;
+}
+
+.thesis-image{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.thesis-image img{
+  height: 100%;
+  padding: 1em;
+}
+
+.thesis-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/* Footer */
+footer{
+  border-top: 1px solid rgba(0,0,0,0.3);
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+  margin-bottom: 2em;
+}
+
+.terms-and-conditions a{
+  color: inherit;
+  padding: 1em;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
