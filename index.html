@@ -7,8 +7,20 @@
 	<link rel="stylesheet" href="./resources/css/styles.css">
 </head>
 <body>
-	<!-- Nav Bar -->
+
+	<!-- change colmar academy title, start here bar -->
+
+	<!-- Header -->
+
 	<header>
+		<!-- BEGINNING OF MOBILE NAV -->
+		<nav class="responsive-nav">
+			<img src="./resources/images/ic-logo.svg" alt="logo">
+			<img src="./resources/images/ic-on-campus.svg" alt="on campus">
+			<img src="./resources/images/ic-online.svg" alt="online">
+			<img src="./resources/images/ic-login.svg" alt="login">
+		</nav>
+		<!-- END OF MOBILE NAV -->
 		<div class="logo desktop">
 			<img src="./resources/images/ic-logo.svg" alt="logo">
 			<p><span >COLMAR</span> ACADEMY</p>
@@ -25,23 +37,19 @@
 					</li>
 				</ul>
 		</nav>
-		<nav class="mobile">
-			<img src="./resources/images/ic-logo.svg" alt="logo">
-			<img src="./resources/images/ic-on-campus.svg" alt="on campus">
-			<img src="./resources/images/ic-online.svg" alt="online">
-			<img src="./resources/images/ic-login.svg" alt="login">
-		</nav>
+
 	</header>
 
-	<!-- Hero Banner -->
-	<div class="hero">
+	<!-- Banner -->
+
+	<div class="banner">
 		<div class="students-studying">
 		</div>
 		<div class="headline">
-			<div class="headline-row">
+			<div class="headline-row bold">
 				<h1>Learn something new everyday</h1>
 			</div>
-			<div class="headline-row">
+			<div class="headline-row bold">
 				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
 			</div>
 			<div class="headline-row">
@@ -52,64 +60,117 @@
 		</div>
 	</div>
 
-	<!-- Testimonials -->
-	<div class="testimonials">
-		<h2>It doesn't hurt to keep practicing.</h2>
-		<h4>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+	<!-- Information -->
 
-		<h4><strong>Emmanuel, Sr Strategist at Hiring.com</strong></h4>
-	</div>
-
-	<!-- Events Sidebar -->
-	<div class="sidebar">
-		<div class="sidebar-row">
-			<img src="" alt="">
-			<h3>Orientation Date</h3>
-			<h4>Tue 10/11 & wed 10/12 8am-3pm</h4>
-			<a href="#">Read more</a>
+	<div class="information">
+		<!-- consider using align-items stretch -->
+		<div class="information-left">
+			<div class="information-row">
+				<img src="./resources/images/information-main.jpg" alt="main information">
+			</div>
+			<div class="information-row">
+				<h2>It doesn't hurt to keep practicing.</h2>
+			</div>
+			<div class="information-row">
+				<h4>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+			</div>
+			<div class="information-row">
+				<h4 class="bold">Emmanuel, Sr Strategist at Hiring.com</h4>
+			</div>
 		</div>
-		<div class="sidebar-row">
-			<img src="" alt="">
-			<h3>Our Campus</h3>
-			<h4>Find which campus is close by you</h4>
-			<a href="#">Read more</a>
-		</div>
-		<div class="sidebar-row">
-			<img src="" alt="">
-			<h3>Our guest lecture</h3>
-			<h4>Joint keynote with Oliver Sack</h4>
-			<a href="#">Read more</a>
+		<div class="information-right">
+			<!-- Events Sidebar -->
+			<div class="sidebar">
+				<div class="sidebar-row">
+					<div class="sidebar-image">
+						<img src="./resources/images/information-orientation.jpg" alt="orientation">
+					</div>
+					<div class="sidebar-info">
+						<h3>Orientation Date</h3>
+						<h4>Tue 10/11 &amp wed 10/12 8am-3pm</h4>
+						<a href="#">Read more</a>
+					</div>
+				</div>
+				<div class="sidebar-row">
+					<div class="sidebar-image">
+						<img src="./resources/images/information-campus.jpg" alt="campus">
+					</div>
+					<div class="sidebar-info">
+						<h3>Our Campus</h3>
+						<h4>Find which campus is close by you</h4>
+						<a href="#">Read more</a>
+					</div>
+				</div>
+				<div class="sidebar-row">
+					<div class="sidebar-image">
+						<img src="./resources/images/information-guest-lecture.jpg" alt="guest lecture">
+					</div>
+					<div class="sidebar-info">
+						<h3>Our guest lecture</h3>
+						<h4>Joint keynote with Oliver Sack</h4>
+						<a href="#">Read more</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<!-- Course Cards -->
-	<div class="course-cards">
-		<h2>Start learning</h2>
-		<div class="product-card">
-			<div class="product-img">
-				<img src="" alt="">
-			</div>
-			<div class="product-info">
+
+	<div class="course">
+		<div class="course-header">
+				<h2>Start learning</h2>
+		</div>
+		<div class="course-grid">
+			<div class="course-card card">
+				<div class="course-title">
+					<img src="./resources/images/course-software.jpg" alt="software">
 					<h3>Software engineering</h3>
-					<h4>Courses</h4>
+					<p class="padding">COURSES</p>
+				</div>
+				<div class="course-info">
+					<p>Web Development, Mobile Development, iOT, APIs</p>
+				</div>
+			</div>
+			<div class="course-card card">
+				<div class="course-title">
+					<img src="./resources/images/course-computer-art.jpg" alt="computer art">
+					<h3>Computer art</h3>
+					<p class="padding">COURSES</p>
+					<p>Imaging &amp Design, Web Design, Motion Graphics &amp Visual Effects, Computer Animation</p>
+				</div>
+				<div class="course-info">
+
+				</div>
+			</div>
+			<div class="course-card card">
+				<div class="course-title">
+					<img src="./resources/images/course-design.jpg" alt="software">
+					<h3>Design</h3>
+					<p class="padding">COURSES</p>
+				</div>
+				<div class="course-info">
+					<p>User Experience Design, User Research, Visual Design</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
-
 	<!-- Themes Exhibit -->
+
 	<div class="video">
 		<video src="videofile.ogg" autoplay poster="posterimage.jpg">
 
 		</video>
 		<h3>Reimagine urban</h3>
 	</div>
+
 	<!-- Footer -->
+
 	<footer>
 		<h5>(c) 2016 Colmar Academy. All Rights Reserved.</h5>
 		<a href="#">Terms</a>
 		<a href="#">Privacy</a>
 	</footer>
-
 </body>
 </html>

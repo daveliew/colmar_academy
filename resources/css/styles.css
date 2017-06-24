@@ -1,27 +1,18 @@
-html {
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans")
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
-
-h2,
-h3,
-h4 {
-  padding: 10px;
-  margin: 0;
-}
+/* Header */
 
 header{
   height: 4em;
@@ -59,7 +50,9 @@ nav ul li a{
   color: black;
 }
 
-.hero{
+/* Banner */
+
+.banner{
   background-color: lightgrey;
   display: flex;
   height: 600px;
@@ -86,10 +79,10 @@ nav ul li a{
 .headline-row{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 100%;
-  font-weight: bold;
   margin: 1em;
+  border: 1px solid red;
 }
 
 .start-here{
@@ -101,16 +94,140 @@ nav ul li a{
   color: white;
 }
 
+.bold{
+  font-weight: bold;
+}
+
+/* Information*/
+
+.information{
+  display: flex;
+  border: 1px solid blue;
+  flex-wrap: wrap;
+}
+
+.information-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 60%;
+  padding: 2em 1em;
+}
+
+.information-row{
+  margin-bottom: 1em;
+}
+
+.information-row img{
+  display: flex;
+  width: 100%;
+  background-image: url("../images/information-main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar-row{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  border: 1px solid red;
+  width: 423px;
+}
+
+.sidebar-image img{
+  display: flex;
+  border: 1px solid green;
+}
+
+.sidebar-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid yellow;
+}
+
+/* Courses */
+.course{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey;
+  border: 1px solid red;
+}
+
+.course-header{
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  width: 100%;
+  border: 1px solid green;
+}
+
+.course-grid{
+  display: flex;
+  margin: 2em 4em;
+  border: 1px solid blue;
+}
+
+.course-card{
+  display: flex;
+  margin: 1em;
+  width: 30%;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 5px solid yellow;
+}
+
+.course-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  height: 220px;
+  border: 1px solid brown;
+}
+
+.course-title img{
+  width: 100%;
+}
+
+.course-title h3{
+  margin-top: 1em;
+}
+
+.course-info{
+  background-color: white;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.padding{
+  padding: 0.5em 0;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: #F09A9D; /* Red */
-  }
+
   .desktop{
     display: none;
   }
 
-  .mobile{
+  .responsive-nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -121,11 +238,8 @@ nav ul li a{
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #F5CF8E; /* Yellow */
-  }
 
-  .mobile{
+  .responsive-nav{
     display: none;
   }
 
@@ -133,11 +247,8 @@ nav ul li a{
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  body {
-    background-color: #B2D6FF; /* Blue */
-  }
 
-  .mobile{
+  .responsive-nav{
     display: none;
   }
 }
