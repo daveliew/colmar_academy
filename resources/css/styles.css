@@ -5,18 +5,27 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.small-margin {
+  margin: 0.5em 0;
+}
+
+
 /* Header */
 
-header{
+header {
   height: 4em;
   display: flex;
   flex-wrap: nowrap;
@@ -24,9 +33,7 @@ header{
   align-items: center;
 }
 
-
-
-.logo{
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,9 +102,6 @@ nav ul li a{
   color: white;
 }
 
-.bold{
-  font-weight: bold;
-}
 
 /* Information*/
 
@@ -128,22 +132,22 @@ nav ul li a{
   background-size: cover;
 }
 
-.sidebar-row{
+.events-row{
   display: flex;
   flex-basis: 423px;
   flex-wrap: nowrap;
   padding: 1em;
 }
 
-.sidebar-row:last-child{
+.events-row:last-child{
   background-color: lightgrey;
 }
 
-.sidebar-image img{
+.events-image img{
   width: 148px;
 }
 
-.sidebar-info{
+.events-info{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,81 +155,66 @@ nav ul li a{
   padding: 1em;
 }
 
-.sidebar-info p{
-  margin: 0.5em 0;
-}
-
 /* Courses */
 .course{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: lightgrey;
-  border: 1px solid red;
 }
 
 .course-header{
   display: flex;
   font-size: 1.5em;
-  font-weight: bolder;
   justify-content: center;
   align-items: center;
-  margin-top: 2em;
+  padding: 2em 0;
   width: 100%;
-  border: 1px solid green;
 }
 
 .course-grid{
   display: flex;
-  margin: 2em 4em;
-  border: 1px solid blue;
+  justify-content: space-around;
+  margin: 0 4em 2em 4em;
+  flex-wrap: wrap;
 }
 
 .course-card{
   display: flex;
-  margin: 1em;
-  width: 30%;
   flex-direction: column;
-  justify-content: flex-start;
-  border: 5px solid yellow;
+  align-items: baseline;
+  background-color: white;
+  max-width: 30%;
+  margin-bottom: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.course-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .course-title{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: white;
-  height: 220px;
-  border: 1px solid brown;
+  min-height: 220px;
 }
 
 .course-title img{
   width: 100%;
 }
 
-.course-title h3{
-  margin-top: 1em;
+.course-title h3,
+.course-title p{
+  padding: 1em 0 0 1em;
 }
 
 .course-info{
   background-color: white;
+  padding: 1em;
+  line-height: 1.5;
 }
 
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.padding{
-  padding: 0.5em 0;
-}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
