@@ -141,6 +141,15 @@ nav ul li a {
   padding: 2em 1em;
 }
 
+.banner-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 4em;
+  max-width: 40%;
+  border: 1px solid pink;
+}
+
 .banner-row {
   display: flex;
   justify-content: center;
